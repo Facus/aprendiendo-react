@@ -4,45 +4,25 @@
   padding: 2rem;
 }
 
-.tw-follow-card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.tw-follow-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.tw-follow-header img {
-  width: 50px;
-  border-radius: 50%;
-}
-
-.tw-follow-card-info {
+.App {
   display: flex;
   flex-direction: column;
+  background-color: #1e2732;
+  border-radius: 1.2em;
 }
 
-.tw-follow-card-info span {
-  opacity: 0.7;
+.app-header {
+  padding: 0 1em;
 }
 
-.tw-follow-btn {
-  border-radius: 2em;
-  background: #eee;
-  color: #222;
-  border: 2px solid transparent;
+.app-footer a {
+  color: #09f;
 }
 
-.tw-follow-btn:hover {
-  border: 2px solid #b33;
-  background-color: #422;
-  color: #b33;
+.app-footer a:hover {
+  color: #3bf;
+}
+
+.app-footer {
+  padding: 1em;
 }
