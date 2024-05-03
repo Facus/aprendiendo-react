@@ -2,7 +2,10 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  color: #ded
+  color: #ded;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .board {
@@ -18,11 +21,72 @@
 }
 
 .board .game .cell {
-  padding: 3ch 4ch;
-  border: 2px solid #565;
-  border-radius: 5px;
+  /* padding: 3ch 4ch; */
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 90px;
+  background-color: #2E382E;
+  border-radius: 8px;
+  border-top: transparent 8px solid;
+  border-bottom: #00000033 8px solid;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .board .game .cell:hover {
-  background-color: #55665533;
+  transition: 0.2s;
+  opacity: 0.7;
 } 
+
+.turn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.turn .cell,
+.win .cell {
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px #2E382E solid;
+}
+
+.cell.is-selected {
+  background-color: #2E382E;
+}
+
+.my {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.winner{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.winner .box-winner {
+  background: #111;
+  height: 300px;
+  width: 320px;
+  border: 2px solid #2E382E;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
